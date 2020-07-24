@@ -181,7 +181,7 @@ const test = () => ({ nome: 'Higo' });
 
 ```
 
-## Destructuring
+## Object destructuring
 
 ### Object destructuring in constant
 
