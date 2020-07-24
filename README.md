@@ -95,8 +95,6 @@ const newArr = arr.map(function(item, index){
   return item + index;
 });
 
-console.log(newArr);
-
 ```
 
 ### Reduces the array to just one value
@@ -108,8 +106,6 @@ const arr = [1, 2, 3, 4, 5, 6, 7];
 const sum = arr.reduce(function(total, next) {
   return total + next;
 });
-
-console.log(sum);
 
 ```
 
@@ -123,8 +119,6 @@ const filter = arr.filter(function(item) {
   return item % 2 === 0;
 });
 
-console.log(filter);
-
 ```
  
 ### Finds a value in the array
@@ -137,6 +131,52 @@ const find = arr.find(function(item) {
   return item === 10;
 });
 
-console.log(find);
+```
+
+## Arrow function
+
+### Default syntax
+
+```javascript
+
+const arr = [1, 2, 3, 4];
+
+const newArr = arr.map((item) => {
+  return item * 2;
+});
+
+```
+
+### Only one param
+
+```javascript
+
+const arr = [1, 2, 3, 4];
+
+const newArr = arr.map(item => {
+  return item * 2;
+});
+
+```
+
+### Only one operation
+
+```javascript
+
+const arr = [1, 2, 3, 4];
+
+const newArr = arr.map(item => item * 2);
+
+```
+
+### Creating functions with different returns
+
+```javascript
+
+const functionTest = () => 'teste';
+
+const test = () => [1, 2, 3];
+
+const test = () => ({ nome: 'Higo' });
 
 ```
