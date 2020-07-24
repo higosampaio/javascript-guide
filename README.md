@@ -180,3 +180,47 @@ const test = () => [1, 2, 3];
 const test = () => ({ nome: 'Higo' });
 
 ```
+
+## Destructuring
+
+### Object destructuring in constant
+
+```javascript
+
+const usuario = {
+  nome: 'Higo',
+  idade: 29,
+  endereco: {
+    cidade: 'São Luís',
+    uf: 'MA'
+  }
+};
+
+const { nome, idade, endereco: { cidade } } = usuario;
+
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+
+```
+
+### Object destructuring in function
+
+```javascript
+
+const usuario = {
+  nome: 'Higo',
+  idade: 29,
+  endereco: {
+    cidade: 'São Luís',
+    uf: 'MA'
+  }
+};
+
+function mostrar({ endereco: { uf }, idade }) {
+  console.log(uf, idade);
+}
+
+mostrar(usuario);
+
+```
