@@ -224,3 +224,42 @@ function mostrar({ endereco: { uf }, idade }) {
 mostrar(usuario);
 
 ```
+
+## Rest operator
+
+### Rest with array destructuring
+
+```javascript
+
+const arr = [1, 2, 3, 4, 5];
+const [a, b, ...c] = arr;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+```
+
+### Return the rest of the params
+
+```javascript
+
+function soma(a, b, ...c) {
+  return c;
+}
+
+console.log(soma(1, 2, 3, 4, 5, 6));
+
+```
+
+### Rest with reduce
+
+```javascript
+
+function newSoma(...params) {
+  return params.reduce((total, next) => total + next);
+}
+
+console.log(newSoma(1, 2, 3, 4, 5, 6, 7, 8));
+
+```
