@@ -263,3 +263,32 @@ function newSoma(...params) {
 console.log(newSoma(1, 2, 3, 4, 5, 6, 7, 8));
 
 ```
+
+## Spread operator
+
+### Array propagation
+
+```javascript
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];
+
+console.log(arr3);
+
+```
+
+### Reuse of objects
+
+```javascript
+
+const usuario1 = {
+  nome: 'Higo',
+  sobrenome: 'Sampaio',
+  idade: 29
+}
+const usuario2 = { ...usuario1, sobrenome: 'Lobato', uf: 'MA' };
+
+console.log(usuario2);
+
+```
