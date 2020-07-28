@@ -292,3 +292,30 @@ const usuario2 = { ...usuario1, sobrenome: 'Lobato', uf: 'MA' };
 console.log(usuario2);
 
 ```
+
+## Template literals
+
+```javascript
+
+const nome = 'Higo';
+const idade = 29;
+
+console.log(`Meu nome é ${nome} e tenho ${idade}`);
+
+```
+
+## Object Short Syntax
+
+```javascript
+
+const nome = 'Higo';
+const idade = 29;
+const usuario = {
+  nome,
+  idade,
+  uf: 'MA'
+};
+
+console.log(usuario);
+
+```
